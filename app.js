@@ -6,6 +6,7 @@ import { asyncHandler } from "./src/routes/asyncHandler.js";
 import productRouter from "./src/routes/products.js";
 import articleRouter from "./src/routes/article.js";
 import productCommentRouter from "./src/routes/productComment.js";
+import articleCommentRouter from "./src/routes/articleComment.js";
 
 const {
   PrismaClient,
@@ -24,6 +25,7 @@ app.use(express.json());
 app.use("/products", productRouter);
 app.use("/articles", articleRouter);
 app.use("/", productCommentRouter);
+app.use("/", articleCommentRouter);
 
 app.listen(process.env.PORT || 3000, () => {
   console.log(`server Started on ${process.env.PORT}!!`);

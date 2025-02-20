@@ -1,6 +1,6 @@
 
 ###
-POST http://localhost:3000/products/d8b6677b-5e80-43d5-bb66-4311c461feec/comment
+POST http://localhost:3000/products/3d995579-79bd-4275-94e2-435f1c8deee2/comment
 Content-Type: application/json
 
 {
@@ -8,9 +8,16 @@ Content-Type: application/json
 }
 
 ###
-PATCH http://localhost:3000/comment/b4b2e038-817a-438d-8072-cd4268fb5f25
+PATCH http://localhost:3000/comment/23599b24-f0c6-4876-ad4b-a5b265c33139
 Content-Type: application/json
 
 {
   "content":"수정된 댓글"
 }
+
+###
+DELETE http://localhost:3000/comment/ba11a8eb-88b5-4c90-a31e-b69dcf835a68
+
+###
+GET http://localhost:3000/product/comment
+Content-Type: application/json
