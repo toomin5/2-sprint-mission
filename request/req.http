@@ -1,5 +1,5 @@
 ###
-GET http://localhost:3000/products
+GET http://localhost:3000/products?search=닌텐도
 
 ###
 POST http://localhost:3000/products
@@ -18,7 +18,7 @@ GET http://localhost:3000/products/a1f58358-dd0b-464e-aa65-45b8e2126394
 ###
 DELETE http://localhost:3000/products/ca5d8135-e1fc-4723-a046-51088b0bcd61
 
-###
+
 ###
 PATCH http://localhost:3000/products/c3e39128-5d9f-43ab-a968-684f118438c0
 Content-Type: application/json
@@ -28,4 +28,12 @@ Content-Type: application/json
   "description":"수정된 상품 입니다.",
   "price":30000,
   "tags":["전자제품", "노트북"]
+}
+
+###
+POST http://localhost:3000/products/d8b6677b-5e80-43d5-bb66-4311c461feec/comments
+Content-Type: application/json
+
+{
+  "content":"댓글 달아보기"
 }

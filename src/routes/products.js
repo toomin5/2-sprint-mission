@@ -10,11 +10,21 @@ router
   .get(
     "/",
     asyncHandler(async (req, res) => {
-      const { offset = 0, limit = 10, order = "recent" } = req.query;
+      const {
+        offset = 0,
+        limit = 10,
+        order = "recent",
+        search = "",
+      } = req.query;
       const orderBy =
         order === "recent" ? { createdAt: "desc" } : { createdAt: "asc" };
-
       const products = await prisma.product.findMany({
+        where: {
+          OR: [
+            { name: { contains: search, mode: "insensitive" } },
+            { description: { contains: search, mode: "insensitive" } },
+          ],
+        },
         orderBy,
         skip: parseInt(offset),
         take: parseInt(limit),
