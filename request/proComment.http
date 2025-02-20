@@ -1,0 +1,16 @@
+
+###
+POST http://localhost:3000/products/d8b6677b-5e80-43d5-bb66-4311c461feec/comment
+Content-Type: application/json
+
+{
+  "content":"댓글 달아보기"
+}
+
+###
+PATCH http://localhost:3000/comment/b4b2e038-817a-438d-8072-cd4268fb5f25
+Content-Type: application/json
+
+{
+  "content":"수정된 댓글"
+}
