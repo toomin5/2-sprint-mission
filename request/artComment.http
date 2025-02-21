@@ -7,7 +7,7 @@ Content-Type: application/json
 }
 
 ###
-PATCH http://localhost:3000/comment/372a9d64-a38c-47e7-ad17-e5bb8316d2dc
+PATCH http://localhost:3000/comment/52a7262f-8f05-4219-ad87-3111e8f99e50
 Content-Type: application/json
 
 {

@@ -12,7 +12,7 @@ PATCH http://localhost:3000/comment/23599b24-f0c6-4876-ad4b-a5b265c33139
 Content-Type: application/json
 
 {
-  "content":"수정된 댓글"
+  "content":"수정d 댓글"
 }
 
 ###
