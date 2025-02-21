@@ -2,6 +2,7 @@ import pkg from "@prisma/client";
 const { PrismaClient } = pkg;
 import { asyncHandler } from "./asyncHandler.js";
 import express from "express";
+import { validateProduct } from "./validateProduct.js";
 
 const router = express.Router();
 const prisma = new PrismaClient();
@@ -34,6 +35,7 @@ router
   )
   .post(
     "/",
+    validateProduct,
     asyncHandler(async (req, res) => {
       const { name, description, price, tags } = req.body;
       const newProduct = await prisma.product.create({
