@@ -29,8 +29,8 @@ app.use(express.json());
 
 app.use("/products", productRouter);
 app.use("/articles", articleRouter);
-app.use("/", productCommentRouter);
-app.use("/", articleCommentRouter);
+app.use("/product", productCommentRouter);
+app.use("/article", articleCommentRouter);
 
 const upload = multer({ dest: "uploads/" });
 

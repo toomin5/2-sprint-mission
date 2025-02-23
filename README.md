@@ -3,17 +3,18 @@
 **디렉토리 구조**
 
 ```bash
-mission3/
-├── app.js                # 메인 애플리케이션 파일
-├── prisma                # Prisma 관련
-│   ├── migrations        # 데이터베이스 마이그레이션
-│   └── schema.prisma     # Prisma 스키마 파일
-├── src                   # 소스 코드
-│   └── routes            # 라우터
-│       ├── article.js
-│       ├── product.js
+
+.
+├── app.js
+├── prisma/         # Prisma 설정 및 관리
+│   ├── migrations/
+│   └── schema.prisma
+├── src/
+│   └── routes/     # 라우팅 처리
+│       ├── article.js # 게시글 라우터
+│       ├── product.js # 상품 라우터
 │       └── ...
-└── uploads               # 업로드된 파일 저장 경로
+└── uploads/        # 파일 업로드 경로
 ```
 
 ---

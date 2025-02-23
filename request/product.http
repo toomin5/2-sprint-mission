@@ -6,17 +6,24 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-  "name":"testPro",
+  "name":"",
   "description":"test상품입니다.",
   "price":50000,
   "tags":["전자제품", "노트북"]
 }
 
+# {
+#   "name":"testPro",
+#   "description":"test상품입니다.",
+#   "price":50000,
+#   "tags":["전자제품", "노트북"]
+# }
+
 ###
 GET http://localhost:3000/products/d8b6677b-5e80-43d5-bb66-4311c461feec
 
 ###
-DELETE http://localhost:3000/products/ca5d8135-e1fc-4723-a046-51088b0bcd61
+DELETE http://localhost:3000/products/49027308-32be-4b1b-839b-c14feb265302
 
 
 ###

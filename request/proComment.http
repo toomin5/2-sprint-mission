@@ -1,6 +1,6 @@
 
 ###
-POST http://localhost:3000/products/3d995579-79bd-4275-94e2-435f1c8deee2/comment
+POST http://localhost:3000/product/3d995579-79bd-4275-94e2-435f1c8deee2/comment
 Content-Type: application/json
 
 {
@@ -19,5 +19,5 @@ Content-Type: application/json
 DELETE http://localhost:3000/comment/ba11a8eb-88b5-4c90-a31e-b69dcf835a68
 
 ###
-GET http://localhost:3000/product/comment
+GET http://localhost:3000/product/3d995579-79bd-4275-94e2-435f1c8deee2/comment
 Content-Type: application/json

@@ -18,4 +18,4 @@ Content-Type: application/json
 DELETE http://localhost:3000/comment/372a9d64-a38c-47e7-ad17-e5bb8316d2dc
 
 ###
-GET http://localhost:3000/article/comment
+GET http://localhost:3000/article/:/comment
