@@ -1,5 +1,5 @@
 ###
-POST http://localhost:3000/comment/article/2d81b518-2f78-4686-821b-28c5e9cf671d
+POST http://localhost:3000/comment/2d81b518-2f78-4686-821b-28c5e9cf671d
 Content-Type: application/json
 
 {

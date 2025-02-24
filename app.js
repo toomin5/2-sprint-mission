@@ -4,11 +4,9 @@ import pkg from "@prisma/client"; // default export로 가져오기
 import cors from "cors";
 import multer from "multer";
 
-import { asyncHandler } from "./src/routes/asyncHandler.js";
 import productRouter from "./src/routes/products.js";
 import articleRouter from "./src/routes/article.js";
-import productCommentRouter from "./src/routes/productComment.js";
-import articleCommentRouter from "./src/routes/articleComment.js";
+import commentRouter from "./src/routes/comment.js";
 
 const {
   PrismaClient,
@@ -29,8 +27,7 @@ app.use(express.json());
 
 app.use("/products", productRouter);
 app.use("/articles", articleRouter);
-app.use("/comment/product", productCommentRouter);
-app.use("/comment/article", articleCommentRouter);
+app.use("/comment", commentRouter);
 
 const upload = multer({ dest: "uploads/" });
 

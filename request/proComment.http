@@ -8,7 +8,7 @@ Content-Type: application/json
 }
 
 ###
-PATCH http://localhost:3000/comment/product/c8489eca-b4bd-4c9c-ab03-3702ea5281f8
+PATCH http://localhost:3000/comment/product/bedae842-f2d2-4ea9-b0ad-ff4f68cd175f
 Content-Type: application/json
 
 {
@@ -16,7 +16,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/comment/product/c8489eca-b4bd-4c9c-ab03-3702ea5281f8
+DELETE http://localhost:3000/comment/product/bedae842-f2d2-4ea9-b0ad-ff4f68cd175f
 
 ###
 GET http://localhost:3000/comment/product/3d995579-79bd-4275-94e2-435f1c8deee2

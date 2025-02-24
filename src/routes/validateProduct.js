@@ -1,4 +1,4 @@
-import { CreateProduct } from "../struct.js";
+import { CreateProduct } from "../../struct.js";
 
 export const validateProduct = (req, res, next) => {
   const [error] = CreateProduct.validate(req.body);
