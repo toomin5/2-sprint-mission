@@ -7,7 +7,7 @@ const prisma = new PrismaClient();
 
 router
   .post(
-    "/:productId/comment",
+    "/:productId",
     asyncHandler(async (req, res) => {
       const { productId } = req.params;
       const { content } = req.body;
@@ -21,7 +21,7 @@ router
     })
   )
   .get(
-    "/:productId/comment",
+    "/:productId",
     asyncHandler(async (req, res) => {
       const { cursor } = req.query;
       const take = 10;
@@ -43,7 +43,7 @@ router
   );
 router
   .patch(
-    "/comment/:id",
+    "/:id",
     asyncHandler(async (req, res) => {
       const { id } = req.params;
       const { content } = req.body;
@@ -55,7 +55,7 @@ router
     })
   )
   .delete(
-    "/comment/:id",
+    "/:id",
     asyncHandler(async (req, res) => {
       const { id } = req.params;
       const deleteComment = await prisma.comment.delete({

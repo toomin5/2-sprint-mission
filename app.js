@@ -29,14 +29,14 @@ app.use(express.json());
 
 app.use("/products", productRouter);
 app.use("/articles", articleRouter);
-app.use("/product", productCommentRouter);
-app.use("/article", articleCommentRouter);
+app.use("/comment/product", productCommentRouter);
+app.use("/comment/article", articleCommentRouter);
 
 const upload = multer({ dest: "uploads/" });
 
 app.post("/files", upload.single("attachment"), (req, res) => {
   console.log(req.file);
-  res.json({ message: "파일업로드" });
+  res.json({ message: "file upload" });
 });
 
 app.listen(process.env.PORT || 3000, () => {
